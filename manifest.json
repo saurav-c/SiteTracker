@@ -2,7 +2,7 @@
     "name": "Site Tracker",
     "version": "1.0",
     "description": "Brought to you by Jerry and Saurav! Provides users with data about their websurfing habits.",
-	"permissions": ["activeTab", "declarativeContent", "storage"],
+	"permissions": ["activeTab", "declarativeContent", "storage", "history"],
 	"background": {
 		"scripts": ["background.js"],
 		"persistent": false
