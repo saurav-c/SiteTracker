@@ -11,7 +11,12 @@ chrome.runtime.onInstalled.addListener(function() {
             actions: [new chrome.declarativeContent.ShowPageAction()]
         }]);
     });
+    console.time('Timer name');
+    //var isFirst = true;
     chrome.history.onVisited.addListener(function(result) {
+        console.timeEnd('Timer name');
+        //isFirst = false;
         console.log(result.url);
+        console.time('Timer name');
     });
 });
