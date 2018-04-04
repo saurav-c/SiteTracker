@@ -11,7 +11,7 @@ chrome.runtime.onInstalled.addListener(function() {
             actions: [new chrome.declarativeContent.ShowPageAction()]
         }]);
     });
-    chrome.history.onVisited.addListener(function(HistoryItem result) {
+    chrome.history.onVisited.addListener(function(result) {
         console.log(result.url);
     });
 });
